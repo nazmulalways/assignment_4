@@ -1,5 +1,6 @@
 <?php 
 class Product {
+    // Properties
     private $id;
     private $name;
     private $price;
@@ -11,7 +12,7 @@ class Product {
         $this->price = $price;
     }
     public function getFormattedPrice() {
-        return (string) $this->price;
+        return (string) number_format($this->price,2);
     }
     
     public function showDetails() {
